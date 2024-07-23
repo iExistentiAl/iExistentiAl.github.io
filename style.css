@@ -686,6 +686,7 @@ input::placeholder {
 
 .socialRow i {
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .linksFooter {
