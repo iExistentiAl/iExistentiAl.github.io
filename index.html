@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="landingPage">
+        <div class="topnav" id="navbar">
+            <div>
+                <img width="108" height="56" src="/assets/logo.svg" alt="logo">
+                <a href="#home">Games</a>
+                <a href="#news">How To Play</a>
+                <a href="#contact">Company</a>
+                <a href="#about" onclick="openPopup()">Sign Up</a>
+            </div>
+        </div>
+        <div class="blockOne">
+            <video class="backgroundVideo" autoplay loop muted>
+                <source src="/assets/background.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <div class="contentBox">
+                <div>
+                    <img width="260" height="230" class="logo_Jackbox" src="./assets/logo_Jackbox.png" alt="logo_Jackbox">
+                </div>
+                <div class="signUpContainer">
+                    <button class="signUp" onclick="openPopup()">Sign Up</button>
+                </div>
+            </div>
+            <div id="popup-form" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Sign Up</h2>
+                    <form id="sign-up-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" email="email" required>
+                        
+                        <label for="Password">Password:</label>
+                        <input type="Password" id="Password" name="Password" required>
+                        
+                        <button type="submit">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="blockTwo">
+        <div class="contentAd">
+            <h1>New Game Announcement !!!</h1>
+            <img src="/assets/logo_NaughtyPack.png" alt="logo_NaughtyPack">
+            <h1>Spicy Details Inside !!!</h1>
+        </div>
+    </div>
+    <div class="blockThree">
+        <div class="contentGames">
+            <img src="/assets/cat_lean.png" alt="cat_lean">
+            <div class="descGames">
+                <h1>JACKBOX GAMES OFFICIAL WEBSITE</h1>
+                
+                <a>Jackbox Games is a Chicago-based studio best known for party-game hits like Quiplash, Fibbage, Drawful, Trivia Murder Party, and more!</a>
+                
+                <br>
+                <br>
+                
+                <a>Think of us as the child of classic social games like `charades`… the child who dropped out of college, but then earned the family`s respect by becoming a world famous clown.</a>
+                
+                <div class="gameGrid">
+                    <div>
+                        <img src="/assets/quiplash.jpg" alt="quiplash">
+                    </div>
+                    <div>
+                        <img src="/assets/murder_trivia.jpg" alt="murder_trivia">
+                    </div>
+                    <div>
+                        <img src="/assets/fibage.jpg" alt="fibage">
+                    </div>
+                    <div>
+                        <img src="/assets/dodoremi.jpg" alt="dodoremi">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="blockFour">
+        <div class="contentPacks">
+            <div>
+                <h1>JACKBOX PARTY PACKS</h1>
+                <a>Each party pack contains five original games. So far, we`ve made 10 different packs. We make a mix of titles designed to appeal to everyone in the room, Zoom call, or Twitch stream. Drawing games, writing games, trivia games, hidden identity games… no party-goer gets left behind.</a>
+            
+                <div class="packsGrid">
+                    <img src="/assets/packs/10.png" alt="10">
+                    <img src="/assets/packs/9.png" alt="9">
+                    <img src="/assets/packs/9-8.png" alt="9-8">
+                    <img src="/assets/packs/8.png" alt="8">
+                    <img src="/assets/packs/7.png" alt="7">
+                    <img src="/assets/packs/6.png" alt="6">
+                    <img src="/assets/packs/5.png" alt="5">
+                    <img src="/assets/packs/4.png" alt="4">
+                    <img src="/assets/packs/3.png" alt="3">
+                    <img src="/assets/packs/2.png" alt="2">
+                    <img src="/assets/packs/1.png" alt="1">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="blockFive">
+        <div class="contentBlog">
+            <div>
+                <h1>JACKBOX GAMES BLOG</h1>
+            
+                <div class="blogRow">
+                    <div class="blog1">
+                        <h1>Best Halloween Activities For 2024</h1>
+                        <a>July 19, 2024</a>
+                        
+                    </div>
+                    <div class="blog2">
+                        <h1>The Jackbox Megapicker is Now Available for Wishlisting</h1>
+                        <a>July 16, 2024</a>
+                    </div>
+                    <div class="blog3">
+                        <h1>Best Games for Canada Day 2024</h1>
+                        <a>June 27, 2024</a>
+                    </div>
+                    <div class="blog4">
+                        <h1>5 Games to Play While You Slack Off At Work Because You Have To Work On Labor Day</h1>
+                        <a>June 26, 2024</a>
+                    </div>
+                    <button class="visitBtn">Visit the Jackbox Games Blog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blockSix">
+        <div class="contentNews">
+            <div class="newsGrid">
+                <div class="left">
+                    <h1>GATHER FRIENDS NEAR OR FAR</h1>
+                    <img src="/assets/flower.png" alt="flower">
+                </div>
+                <div class="right">
+                    <h1>JACKBOX GAMES ARE FOR PALS</h1>
+                    <a>Your other players don't need to buy anything to join your game - just make sure everybody can see the host screen and you're in for a good time.</a>
+                    <h1 id="socMedia">FOLLOW US ON SOCIAL MEDIA</h1>
+                    <div class="socialColumn">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-reddit fa-2x"></i>
+                        <i class="fab fa-tiktok fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                    <h1>JOIN OUR NEWSLETTER</h1>
+                    <a>Stay up to date on all things Jackbox Games, including news, updates, teasers, and exclusives.</a>
+                    <div class="submitForm">
+                        <div class="inputWrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <button>Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blockSeven">
+        <div class="contentFAQ">
+            <div class="faqGrid">
+                <div class="chimp">
+                    <img src="/assets/chimp.png">
+                </div>
+                <div class="faq">
+                    <h1>STILL HAVE QUESTIONS?</h1>
+                    <p>We`ll do our best below! And if you don`t find what you`re looking for, check out How to Play.</p>
+                    <div class="faqBtn">
+                        <button>
+                            What is Jackbox Games?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <br>
+                        <button>
+                            What is a Party Pack?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <br>
+                        <button>
+                            OK, I`ve purchased a party pack! Is there anything my friends or family need to do to play with me?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <br>
+                        <button>
+                            How do I get a Jackbox Game Started?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <br>
+                        <button>
+                            What should I do if I experience issues while playing a Jackbox Game?
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="top">
+                    <div>
+                        <img width="108" height="56" src="/assets/logo.svg" alt="logo">
+                    </div>
+                    <div class="socialRow">
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-reddit fa-2x"></i>
+                        <i class="fab fa-tiktok fa-2x"></i>
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                </div>
+                <hr class="footer-line">
+                <div class="top">
+                    <div>
+                        <p>
+                            © Copyright 2024 Jackbox Games. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="linksFooter">
+                        <p>
+                            Terms of Service
+                        </p>
+                        <p>
+                            Privacy Policy
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

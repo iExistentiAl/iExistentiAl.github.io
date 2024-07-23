@@ -1,0 +1,700 @@
+body {
+    background-color: #333;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    padding: 10px 70px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+
+.topnav.sticky {
+    background-color: #202230;
+}
+
+.topnav a {
+    float: right;
+    color: #e7eaee;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.topnav a:hover {
+    background-color: #4a4e69;
+    border-radius: 8px;
+}
+
+.signUp {
+    background: linear-gradient(180deg, #C4CBFF 0%, #8F9CFF 100%);
+    padding: 16px 12px;
+    color: #0d0f11;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 400px;
+    font-size: 19px;
+    font-weight: 700;
+    border: none;
+    margin-top: 30px;
+
+}
+
+.landingPage {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+}
+
+.signUp:hover {
+    background: linear-gradient(180deg, #d4d9ff 0%, #aeb7fd 100%);
+    color: rgb(103, 116, 211);
+}
+
+.backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo_Jackbox {
+    padding-bottom: 50px;
+}
+
+.logo_Jackbox:hover {
+    transition: ease-in 200ms;
+    transform: scale(1.1);
+}
+  
+.blockOne, .blockTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.blockOne {
+    height: 91vh;
+    justify-content: center;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+
+.popup-content h2 {
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+#sign-up-form input[type="email"],
+#sign-up-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sign-up-form button {
+    padding: 10px;
+    background-color: #4992c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#sign-up-form button:hover {
+    background-color: #366e94;
+}
+
+.blockTwo {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    
+    background: linear-gradient(90deg, #000000 0%, #0d242f 40%, #0d242f 60%, #000000 100%);
+}
+
+.contentAd img {
+    width: 272px;
+    height: 100px;
+    margin: 25px;
+}
+
+.contentAd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    
+}
+
+.contentGames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 120px 80px;
+    background-image:url(/assets/whats_jackbox_bg.jpg);
+    background-size: cover;
+    color: white;
+    
+}
+
+.descGames {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.descGames a {
+    font-size: 16px;
+}
+
+.descGames h1 {
+    font-size: 48px;
+}
+
+.gameGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.gameGrid img {
+    width: 240px;
+    height: 115px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
+    transform-origin: center;
+    z-index: 1;
+    
+}
+
+.gameGrid div {
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    transition: ease-in-out 150ms;
+    border: 3px solid transparent;
+}
+
+.gameGrid div:hover {
+    border: 3px solid white;
+    transform: scale(1.1);
+}
+
+.gameGrid img:hover {
+    box-shadow: none;
+}
+
+.blockFour {
+    display: flex;
+    justify-content: center;
+    background-image:url(/assets/contentBG.jpg);
+    background-size: cover;
+}
+
+.contentPacks {
+    padding: 80px 120px;
+    box-sizing: border-box;
+    width: 80%;
+    align-items: center;
+    color: white;
+    
+}
+
+.contentPacks h1 {
+    font-size: 48px;
+}
+
+.packsGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding-top: 60px;
+    
+}
+
+.packsGrid img {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: ease-in-out 150ms;
+    transform-origin: center;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.packsGrid img:hover {
+    transform: scale(1.1);
+}
+
+.packsGrid img:last-child:nth-child(5n + 1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.blockFive {
+    display: flex;
+    justify-content: center;
+    background-image:url(/assets/blog_bg.png);
+    background-size: cover;
+    height: 600px;
+}
+
+.contentBlog {
+    padding: 80px 120px;
+    box-sizing: border-box;
+    width: 80%;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+
+.contentBlog h1 {
+    font-size: 48px;
+}
+
+
+.blogRow h1 {
+    font-size: 18px;
+}
+
+.blogRow a {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.blogRow {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+    
+}
+
+.blog1, .blog2, .blog3, .blog4 {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: ease-in-out 150ms;
+    transform-origin: center;
+    object-fit: contain;
+}
+
+.blogRow div:hover {
+    transform: scale(1.07);
+    border: 3px solid white;
+}
+
+.blog1 h1, .blog1 a,
+.blog2 h1, .blog2 a,
+.blog3 h1, .blog3 a,
+.blog4 h1, .blog4 a {
+    position: relative;
+    z-index: 2; 
+    padding: 10px;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+}
+
+.blog4 h1 {
+    margin: 0px;
+    padding: 8px;
+}
+
+.blog1 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%), url('/assets/blog1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog2 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%), url('/assets/blog2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog3 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%), url('/assets/blog3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog4 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.6) 100%), url('/assets/blog4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visitBtn {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid rgb(172, 172, 172);
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.visitBtn:hover {
+    border: 1px solid #ffffff;
+}
+
+.blockSix {
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(76.37% 50% at 50% 50%, #419544 28.89%, #276829 100%);
+}
+
+.contentNews {
+    padding: 60px 120px;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+.left h1 {
+    font-size: 48px;
+    margin-top: 0px;
+    text-align: right;
+    width: 50%;
+}
+
+.left img {
+    width: 200px;
+    height: 170px;
+}
+
+.right {
+    width: 85%;
+}
+
+.right h1 {
+    font-size: 20px;
+    margin-top: 0px;
+    width: 100%;
+}
+.right a {
+    width: 100%;
+}
+
+#socMedia {
+    margin-top: 20px;
+}
+
+.newsGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.socialColumn {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 10%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.socialColumn i {
+    cursor: pointer;
+}
+
+.submitForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 15px; 
+}
+
+.inputWrapper i {
+    position: absolute; 
+    left: 10px; 
+    color: #d4d4d4;
+    font-size: 18px; 
+    pointer-events: none; 
+}
+
+input::placeholder {
+    color: #b6b6b6; 
+    font-size: 14px;
+
+}
+
+.inputWrapper input {
+    width: 100%;
+    padding: 15px 15px 15px 40px; 
+    border-radius: 4px 4px 0px 0px;
+    border: none;
+    box-sizing: border-box; 
+    font-size: 14px; 
+}
+
+.submitForm button {
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.submitForm button:hover {
+    background-color: white;
+    color: #929eff;
+}
+
+.blockSeven {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+}
+
+.faqGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.faq {
+    width: 100%;
+}
+
+.faq p {
+    font-size: 18px;
+}
+
+.faq h1 {
+    font-size: 48px;
+}
+
+.faqBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.faqBtn button {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 1px solid #7980aa;
+    background-color: #3A3C43;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+    transition: 100ms ease-in-out;
+}
+
+.faqBtn button:hover {
+    background-color: rgb(54, 54, 54);
+}
+
+.faqBtn button i {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.chimp {
+    display: flex;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
+    align-content: start;
+    width: fit-content;
+    padding-right: 200px;
+    margin-left: 75px;
+}
+
+.footer {
+    background: #000000;
+    color: #fff;
+    height: auto;
+    padding-top: 40px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.socialRow i {
+    padding-right: 10px;
+}
+
+.linksFooter {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.linksFooter p {
+    padding-left: 20px;
+    font-size: 18px;
+}
