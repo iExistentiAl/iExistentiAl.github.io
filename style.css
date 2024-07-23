@@ -186,6 +186,7 @@ label {
     width: 272px;
     height: 100px;
     margin: 25px;
+    animation: flicker 4s infinite;
 }
 
 .contentAd {
@@ -196,6 +197,23 @@ label {
     font-size: 12px;
     
 }
+
+@keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: 1;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.8;
+    }
+}
+
+.contentAd h1 {
+    font-family: Tilt Neon, Comic Sans, sans-serif;
+    color: #ff7efa;
+    text-shadow: 0 0 7px #d13acc;
+    animation: flicker 6s infinite;
+    font-weight: 400;
+}   
 
 .contentGames {
     display: flex;
@@ -612,7 +630,7 @@ input::placeholder {
     flex-direction: column;
 }
 
-.faq-item button {
+.faqBtn button {
     display: flex;
     text-align: start;
     align-items: center;
@@ -628,28 +646,15 @@ input::placeholder {
     width: 90%;
     box-sizing: border-box;
     transition: 100ms ease-in-out;
-    margin-bottom: 20px;
 }
 
-.faq-item button:hover {
+.faqBtn button:hover {
     background-color: rgb(54, 54, 54);
 }
 
-.faq-item button i {
+.faqBtn button i {
     margin: 10px;
     font-size: 16px;
-}
-
-.faq-content {
-    display: none;
-    padding: 10px;
-    width: 90%;
-    box-sizing: border-box;
-    margin-left: 15px;
-}
-a
-.faq-content.show {
-    display: block;
 }
 
 .chimp {
@@ -699,7 +704,6 @@ a
 
 .socialRow i {
     padding-right: 10px;
-    cursor: pointer;
 }
 
 .linksFooter {
@@ -711,4 +715,18 @@ a
 .linksFooter p {
     padding-left: 20px;
     font-size: 18px;
+}
+
+.error {
+    color: white;
+    text-align: center;
+    padding: 150px;
+}
+
+.error h1 {
+    font-size: 64px;
+}
+
+.error p {
+    font-size: 24px;
 }
