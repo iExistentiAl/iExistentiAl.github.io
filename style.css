@@ -612,7 +612,7 @@ input::placeholder {
     flex-direction: column;
 }
 
-.faqBtn button {
+.faq-item button {
     display: flex;
     text-align: start;
     align-items: center;
@@ -628,15 +628,28 @@ input::placeholder {
     width: 90%;
     box-sizing: border-box;
     transition: 100ms ease-in-out;
+    margin-bottom: 20px;
 }
 
-.faqBtn button:hover {
+.faq-item button:hover {
     background-color: rgb(54, 54, 54);
 }
 
-.faqBtn button i {
+.faq-item button i {
     margin: 10px;
     font-size: 16px;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+a
+.faq-content.show {
+    display: block;
 }
 
 .chimp {

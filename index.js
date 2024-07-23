@@ -14,7 +14,6 @@ function openPopup() {
     popup.style.display = "block";
 }
 
-// Function to close the pop-up
 function closePopup() {
     var popup = document.getElementById("popup-form");
     popup.style.display = "none";
@@ -23,14 +22,29 @@ function closePopup() {
 document.addEventListener("DOMContentLoaded", function() {
     var closeBtn = document.querySelector(".close-btn");
 
-    // Close the pop-up when the user clicks on the close button
     closeBtn.addEventListener("click", closePopup);
 
-    // Close the pop-up when the user clicks anywhere outside of the pop-up content
     window.addEventListener("click", function(event) {
         var popup = document.getElementById("popup-form");
         if (event.target == popup) {
             closePopup();
+        }
+    });
+});
+
+
+document.querySelectorAll('.faq-btn').forEach(button => {
+    button.addEventListener('click', () => {
+
+        button.classList.toggle('active');
+        
+
+        const content = button.nextElementSibling;
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
         }
     });
 });
