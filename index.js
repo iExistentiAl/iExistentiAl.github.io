@@ -11,7 +11,8 @@ function changeNavbarColor() {
 
 function openPopup() {
     var popup = document.getElementById("popup-form");
-    popup.style.display = "block";
+    popup.style.display = "flex";
+
 }
 
 function closePopup() {
@@ -52,8 +53,13 @@ document.querySelectorAll('.faq-btn').forEach(button => {
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burgerMenu');
     const navLinks = document.getElementById('navLinks');
+    const signUpButton = document.getElementById('signUpButton');
 
     burgerMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+    });
+    
+    signUpButton.addEventListener('click', () => {
+        navLinks.classList.remove('active');
     });
 });

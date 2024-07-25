@@ -118,11 +118,22 @@ button {
     color: #0d0f11;
     cursor: pointer;
     border-radius: 4px;
-    width: 400px;
+    width: 100%;
     font-size: 19px;
     font-weight: 700;
     border: none;
     margin-top: 30px;
+}
+
+.platformLinks {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 24px;
+}
+
+.platformLinks img {
+    width: 40px;
+    height: 28px;
 }
 
 @media (max-width: 768px) {
@@ -139,6 +150,7 @@ button {
         display: flex; 
         align-items: center;
         justify-content: center; 
+        
     }
 
     .popup-content {
@@ -209,6 +221,11 @@ button {
     #sign-up-form button:hover {
         background-color: #366e94;
     }
+
+    .platformLinks a {
+        width: 24px;
+        height: 20px;
+    }
 }
 
 .landingPage {
@@ -242,6 +259,7 @@ button {
 }
 
 .logo_Jackbox {
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -270,7 +288,6 @@ button {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
@@ -430,13 +447,13 @@ label {
     width: 100%;
     height: 100%;
     padding-bottom: 20px;
-    overflow: hidden;
-    padding: 20px;
+    padding-top: 20px;
+    overflow: visible;
 }
 
 .gameGrid img {
-    width: 240px;
-    height: 115px;
+    width: 100%;
+    height: 100%;
     justify-self: center;
     align-self: center;
     border-radius: 6px;
@@ -576,7 +593,7 @@ label {
 }
 
 .contentBlog {
-    padding: 80px 120px;
+    padding: 80px 0px;
     box-sizing: border-box;
     width: 80%;
     align-items: center;
@@ -919,15 +936,11 @@ input::placeholder {
     font-size: 48px;
 }
 
-.faqBtn {
-    display: flex;
-    flex-direction: column;
-}
-
 .faq-item button {
     display: flex;
     text-align: start;
     align-items: center;
+    height: fit-content;
     height: 70px;
     padding-left: 15px;
     border-radius: 4px;
@@ -1198,4 +1211,10 @@ a
         font-size: 24px;
     }
     
+}
+
+@media (max-width: 974px) {
+    .chimp {
+        padding-right: 0px;
+    }
 }
