@@ -226,6 +226,15 @@ button {
         width: 24px;
         height: 20px;
     }
+
+    .platformLinks a img {
+        width: 24px;
+        height: 20px;
+    }
+
+    .signUp {
+        width: 250px;
+    }
 }
 
 .landingPage {
